@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YHONIE D. DATULAYTA | 2026 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="floating-nav">
+        <div class="logo">YHONIE<span class="gradient-text">.DEV</span></div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="avatar-ring">
+                    <img src="yoni-pic.jpg" alt="YHONIE D. DATULAYTA" class="profile-pic">
+                </div>
+                <h2 class="pre-title">YHONIE D. DATULAYTA &bull; Aspiring Web Developer</h2>
+                <h1 class="main-title">Crafting <span class="gradient-text">Digital</span> Experiences.</h1>
+                <p class="hero-desc">Information Technology student specializing in Computer Fundamentals, Operations, and modern UI/UX architecture.</p>
+            </div>
+        </section>
+
+        <section id="about" class="bento-container">
+            <div class="bento-box bento-large glass-panel">
+                <div class="bento-content">
+                    <span class="icon">⚡</span>
+                    <h2>About Me</h2>
+                    <p>I am an Information Technology student passionate about computer technology. My core skills include Computer Fundamentals and Operations, serving as my absolute foundation in navigating and building complex tech environments.</p>
+                </div>
+            </div>
+            
+            <div class="bento-box bento-tall glass-panel" id="aspirations">
+                <div class="bento-content">
+                    <span class="icon">🚀</span>
+                    <h2>Career Vision</h2>
+                    <p>My ultimate goal is to become a Full-Stack Web Developer. I am constantly building real-world projects, mastering modern front-end/back-end frameworks, and engaging in open-source to refine my engineering craft.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="section-title">
+                <h2>Design <span class="gradient-text">Systems</span></h2>
+                <p>A deep dive into my UI/UX component architecture.</p>
+            </div>
+            
+            <div class="works-grid">
+                
+                <!-- Project 1: PickleHub -->
+                <div class="project-card glass-panel group-hover">
+                    <div class="project-header">
+                        <h3>PickleHub</h3>
+                        <div class="status-pill">Project 1</div>
+                    </div>
+                    
+                    <div class="design-specs">
+                        <div class="spec-block">
+                            <h4>Color Palette</h4>
+                            <div class="swatch-container">
+                                <div class="swatch" style="background: #10287A;">Primary</div>
+                                <div class="swatch" style="background: #008000; color: #fff;">Success</div>
+                            </div>
+                        </div>
+                        <div class="spec-block">
+                            <h4>Typography</h4>
+                            <p class="mono-text">H1-H6: Montserrat, Bold<br>Body: Inter, Regular</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.figma.com/design/bqCX8hjvwvL2UYA9fkp1aY/DESIGN-SYSTEM--Community-?node-id=0-1&t=ROm1skAMDkfUP7Cp-1" target="_blank" class="magnetic-btn">Explore Prototype &rarr;</a>
+                </div>
+
+                <div class="project-card glass-panel group-hover">
+                    <div class="project-header">
+                        <h3>Valorant Redesign</h3>
+                        <div class="status-pill">Project 2</div>
+                    </div>
+                    
+                    <div class="design-specs">
+                        <div class="spec-block">
+                            <h4>Color Palette</h4>
+                            <div class="swatch-container">
+                                <div class="swatch" style="background: #FF4655;">Primary</div>
+                                <div class="swatch" style="background: #0F1923; color: #fff;">Secondary</div>
+                            </div>
+                        </div>
+                        <div class="spec-block">
+                            <h4>Typography</h4>
+                            <p class="mono-text">H1-H6: Montserrat, Bold<br>Body: Inter, Regular</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.figma.com/design/NvoEKXO7hJ7nvpARpT2cPS/Design-System?t=ROm1skAMDkfUP7Cp-1" target="_blank" class="magnetic-btn">Explore Prototype &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact-section">
+            <div class="glass-panel contact-panel">
+                <h2>Ready to collaborate?</h2>
+                <div class="social-pills">
+                    <a href="mailto:yhoniedatulayta12@gmail.com" class="pill-link">Email Me</a>
+                    <a href="https://github.com/yhoniedatulayta" target="_blank" class="pill-link">GitHub</a>
+                    <a href="https://instagram.com/12y.ni07" target="_blank" class="pill-link">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>YHONIE D. DATULAYTA &bull; COMP 101 &bull; COMPUTER FUNDAMENTALS</p>
+        <p class="copyright">&copy; 2026 YHONIE D. DATULAYTA. Designed for the future.</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if(localStorage.getItem('theme') === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            toggleBtn.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                toggleBtn.textContent = '🌙';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggleBtn.textContent = '☀️';
+            }
+        });
+    </script>
+</body>
+</html>
